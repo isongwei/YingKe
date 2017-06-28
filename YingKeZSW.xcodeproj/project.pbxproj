@@ -54,6 +54,7 @@
 		F990D1431F037E1C00413C67 /* SW_YouxiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D1411F037E1C00413C67 /* SW_YouxiViewController.m */; };
 		F990D1441F037E1C00413C67 /* SW_YouxiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F990D1421F037E1C00413C67 /* SW_YouxiViewController.xib */; };
 		F990D1481F037E6E00413C67 /* SWScrollPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D1471F037E6E00413C67 /* SWScrollPageVC.m */; };
+		F990D14C1F039D9B00413C67 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D14B1F039D9B00413C67 /* UIScrollView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +146,8 @@
 		F990D1421F037E1C00413C67 /* SW_YouxiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SW_YouxiViewController.xib; sourceTree = "<group>"; };
 		F990D1461F037E6E00413C67 /* SWScrollPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWScrollPageVC.h; sourceTree = "<group>"; };
 		F990D1471F037E6E00413C67 /* SWScrollPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWScrollPageVC.m; sourceTree = "<group>"; };
+		F990D14A1F039D9B00413C67 /* UIScrollView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extension.h"; sourceTree = "<group>"; };
+		F990D14B1F039D9B00413C67 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -609,6 +612,8 @@
 		F990D1491F039C3100413C67 /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				F990D14A1F039D9B00413C67 /* UIScrollView+Extension.h */,
+				F990D14B1F039D9B00413C67 /* UIScrollView+Extension.m */,
 			);
 			path = UIScrollView;
 			sourceTree = "<group>";
@@ -707,6 +712,7 @@
 				F990D0EC1F035B9500413C67 /* UIBarButtonItem+Extension.m in Sources */,
 				F990D0F51F035B9500413C67 /* UILabel+Extension.m in Sources */,
 				F990D0F01F035B9500413C67 /* UIColor+Extension.m in Sources */,
+				F990D14C1F039D9B00413C67 /* UIScrollView+Extension.m in Sources */,
 				F990D1431F037E1C00413C67 /* SW_YouxiViewController.m in Sources */,
 				F990D0E41F035B9500413C67 /* NSDate+Common.m in Sources */,
 				F990D13E1F037E1200413C67 /* SW_XiaoshipinViewController.m in Sources */,
