@@ -20,7 +20,8 @@
 #define btnSColor [UIColor colorWithHexString:@"000000"]
 #define btnScale 1.3
 #define btnFontSize 14
-#define hasLine 0
+#define hasLine 1
+#define padding 20
 
 
 @interface SWScrollPageVC ()<UIScrollViewDelegate>
@@ -44,34 +45,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor =[UIColor clearColor];
-    //
+   
     _childVCArr = [NSMutableArray array];
     _buttonArr = [NSMutableArray array];
-    
-    // 1.设置标题scrollView
-    [self titleScrollView];
-    [self contentScrollView];
-    
-    [self.view addSubview:self.titleScrollView];
-    
-    // 2.设置内容scrollView
-    [self.view addSubview:self.contentScrollView];
     
     
 }
 -(UIScrollView *)titleScrollView{
     
+    NSAssert(_titleViewFrame.size.width != 0, @"需要设置titleViewFrame属性");
+    
     if (!_titleScrollView) {
         // 验证是否有navigationController或navigationBar是否隐藏
-        UIScrollView *titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, origin_Y, SCREEN_W, 44)];
+        UIScrollView *titleScrollView = [UIScrollView new];
+        titleScrollView.frame = _titleViewFrame;
         titleScrollView.delegate = self;
-        titleScrollView.backgroundColor = [UIColor clearColor];
+        titleScrollView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.5];
         _titleScrollView = titleScrollView;
-
+//        [self.view addSubview:self.titleScrollView];
     }
     return _titleScrollView;
 
@@ -79,11 +72,13 @@
 
 -(UIScrollView *)contentScrollView{
     if (!_contentScrollView) {
-        UIScrollView *contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,  origin_Y+self.titleScrollView.frame.size.height, SCREEN_W, SCREEN_H-64-49)];
+        
+        UIScrollView *contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_W, SCREEN_H-64-49)];
         contentScrollView.delegate = self;
         contentScrollView.pagingEnabled = YES;
-        contentScrollView.backgroundColor = [UIColor colorWithHexString:@"f5f5f5"];
+        contentScrollView.backgroundColor = [UIColor redColor];
         _contentScrollView = contentScrollView;
+        [self.view addSubview:self.contentScrollView];
     }
     return _contentScrollView;
 }
@@ -112,23 +107,16 @@
 - (void)setupAllTitleButton
 {
     
-    NSInteger l_w = 0;
+    NSInteger btnX = 0;
     NSInteger btn_w = 0;
     NSInteger count = self.childVCArr.count;
     //需要根据长度定下
     CGFloat btnH = self.titleScrollView.bounds.size.height;
-    CGFloat btnX = 0;
-    //lineView
-    
-    if (hasLine) {
-        _lineView = [[UIView alloc]initWithFrame:(CGRectMake(5, btnH-5, btnW-10, 3))];
-        _lineView.backgroundColor = [UIColor greenColor];
-        [_titleScrollView addSubview:_lineView];
-    }
+
 
     
     for (NSInteger i = 0; i < count; i++) {
-        btnX = i * btnW;
+//        btnX = i * btnW;
 
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         titleButton.backgroundColor = [UIColor clearColor];
@@ -137,11 +125,11 @@
         [titleButton setTitle:vc.title forState:UIControlStateNormal];
         
         #pragma mark - ==============================
-        btn_w = vc.title.length * btnFontSize + 35;
+        btn_w = vc.title.length * btnFontSize + padding;
         
-        titleButton.frame = CGRectMake(l_w, 0, btn_w, btnH);
+        titleButton.frame = CGRectMake(btnX, 0, btn_w, btnH);
   
-        l_w += btn_w;
+        btnX += btn_w;
         titleButton.titleLabel.font = [UIFont systemFontOfSize:btnFontSize];
         [titleButton setTitleColor:btnColor forState:UIControlStateNormal];
         
@@ -151,13 +139,24 @@
         [self.titleScrollView addSubview:titleButton];
         if (i == 0) {
             // 默认点击第一个标题
+            
+            if (hasLine) {
+                _lineView = [[UIView alloc]initWithFrame:(CGRectMake(3, btnH-5, titleButton.frame.size.width-6, 3))];
+                _lineView.backgroundColor = [UIColor greenColor];
+                [_titleScrollView addSubview:_lineView];
+            }
+            
             [self titleClick:titleButton];
         }
 
     }
     
+    //lineView
+    
+
+    
     // 设置标题scrollView的滚动范围
-    self.titleScrollView.contentSize = CGSizeMake(l_w, btnH);
+    self.titleScrollView.contentSize = CGSizeMake(btnX, btnH);
     self.titleScrollView.showsHorizontalScrollIndicator = NO;
     
 
@@ -167,8 +166,8 @@
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     NSInteger l_w = self.titleScrollView.contentSize.width;
-    if (l_w < SCREEN_W) {
-        [self.titleScrollView setContentOffset:CGPointMake(-(SCREEN_W - l_w)*0.5, 0) animated:NO];
+    if (l_w < _titleViewFrame.size.width) {
+        [self.titleScrollView setContentOffset:CGPointMake(-(_titleViewFrame.size.width - l_w)*0.5, 0) animated:NO];
     }
 }
 
@@ -185,6 +184,12 @@
     // 内容滚动到对应的位置
     CGFloat offsetX = i * SCREEN_W;
     [self.contentScrollView setContentOffset:CGPointMake(offsetX, 0) animated:NO];
+    
+    
+    //LineView
+    CGPoint point = _lineView.center;
+    point.x = button.center.x;
+    _lineView.center = point ;
     
 }
 
@@ -230,18 +235,21 @@
 
 -(void)setupTitleView:(UIButton * )button{
     
-    if (_titleScrollView.contentSize.width < SCREEN_W) {
-        [self.titleScrollView setContentOffset:CGPointMake(-(SCREEN_W - _titleScrollView.contentSize.width)*0.5, 0) animated:NO];
+    
+    NSInteger length = _titleViewFrame.size.width;
+    
+    if (_titleScrollView.contentSize.width < length) {
+        [self.titleScrollView setContentOffset:CGPointMake(-(length - _titleScrollView.contentSize.width)*0.5, 0) animated:NO];
         return;
     }
     
-    CGFloat offsetX = button.center.x - SCREEN_W * 0.5;
+    CGFloat offsetX = button.center.x - length * 0.5;
     
     if (offsetX < 0) {
         offsetX = 0;
     }
     
-    CGFloat maxOffsetX = _titleScrollView.contentSize.width-SCREEN_W;
+    CGFloat maxOffsetX = _titleScrollView.contentSize.width-length;
     if (offsetX > maxOffsetX) {
         offsetX = maxOffsetX;
     }
@@ -257,6 +265,15 @@
         NSInteger i = scrollView.contentOffset.x / SCREEN_W;
         UIButton *titleButton = self.buttonArr[i];
         [self titleClick:titleButton];
+        
+        
+
+//        CGRect frame = _lineView.frame;
+//        frame.ce= _contentScrollView.contentOffset.x/SCREEN_W*btnW+3;
+//        _lineView.frame = frame;
+        
+        
+        
     }
     
     
@@ -265,10 +282,7 @@
 {
     
     if (scrollView == _contentScrollView) {
-        CGRect frame = _lineView.frame;
-        frame.origin.x = _contentScrollView.contentOffset.x/SCREEN_W*btnW+3;
-        _lineView.frame = frame;
-        
+  
         
         if (scrollView == _contentScrollView && scrollView.contentOffset.x >= 0 && scrollView.contentOffset.x <= (_buttonArr.count-1) * SCREEN_W) {
             NSInteger leftI = scrollView.contentOffset.x / SCREEN_W;
@@ -291,6 +305,12 @@
             leftBtn.transform = CGAffineTransformMakeScale(scaleL * (btnScale -1) + 1, scaleL * (btnScale -1) + 1);
             rightBtn.transform = CGAffineTransformMakeScale(scaleR * (btnScale -1) + 1, scaleR * (btnScale -1) + 1);
             
+            
+            
+            
+            
+  
+            
             //        UIColor *leftColor = [UIColor colorWithRed:scaleL green:0 blue:0 alpha:1];
             //        UIColor *rightColor = [UIColor colorWithRed:scaleR green:0 blue:0 alpha:1];
             //        [leftBtn setTitleColor:leftColor forState:UIControlStateNormal];
@@ -305,10 +325,16 @@
 #pragma mark - ===============更新UI===============
 -(void)updateUI{
     
-    
+
+
     if (self.childVCArr.count == 0) {
         return;
     }
+    
+    // 设置内容scrollView
+    [self titleScrollView];
+    [self contentScrollView];
+    
     
     if (!_isSuc) {
         // 4.设置所有标题
@@ -318,8 +344,10 @@
         [self setupAllChildViewController];
         _isSuc = YES;
     }else{
-        if (_titleScrollView.contentSize.width < SCREEN_W) {
-            [self.titleScrollView setContentOffset:CGPointMake(-(SCREEN_W - _titleScrollView.contentSize.width)*0.5, 0) animated:NO];
+        
+        NSInteger length  = _titleViewFrame.size.width;
+        if (_titleScrollView.contentSize.width < length) {
+            [self.titleScrollView setContentOffset:CGPointMake(-(length - _titleScrollView.contentSize.width)*0.5, 0) animated:NO];
         }
     }
     

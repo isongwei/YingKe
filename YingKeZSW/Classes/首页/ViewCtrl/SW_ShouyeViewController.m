@@ -17,14 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray * strArr = @[@"Faxian",@"Remen",@"Xiaoshipin",@"Youxi",];
+    NSDictionary * strDic = @{@"Faxian":@"发现",@"Remen":@"热门",@"Xiaoshipin":@"小视频",@"Youxi":@"游戏",};
     
-    for (NSString  * str in strArr) {
+    for (NSString  * str in [strDic allKeys]) {
         Class class = NSClassFromString([NSString stringWithFormat:@"SW_%@ViewController",str]);
-        [self.childVCArr addObject: [class new]];
+        UIViewController * vc = [class new];
+        vc.title = strDic[str];
+        [self.childVCArr addObject: vc];
     }
-    
+    self.titleViewFrame = CGRectMake(0, 0, 250, 44);
     [self updateUI];
+    
+    self.navigationItem.titleView = self.titleView;
    
     
 }
@@ -34,7 +38,7 @@
     [super viewDidAppear:animated];
     UIView * v = [[UIView alloc]initWithFrame:(CGRectMake(0, 0, 300, 44))];
     v.backgroundColor = [UIColor redColor];
-    self.navigationItem.titleView = v;
+    
     
 }
 

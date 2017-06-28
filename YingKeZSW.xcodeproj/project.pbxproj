@@ -223,6 +223,7 @@
 		F990D0A51F035B9500413C67 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F990D1491F039C3100413C67 /* UIScrollView */,
 				F990D0A61F035B9500413C67 /* NSDate */,
 				F990D0AD1F035B9500413C67 /* NSObject */,
 				F990D0B01F035B9500413C67 /* NSString */,
@@ -603,6 +604,13 @@
 				F990D1471F037E6E00413C67 /* SWScrollPageVC.m */,
 			);
 			path = SWScrollPageVC;
+			sourceTree = "<group>";
+		};
+		F990D1491F039C3100413C67 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -12,6 +12,10 @@
 // 子控制器数组
 @property (nonatomic, strong) NSMutableArray<UIViewController *> *childVCArr;
 
+@property (nonatomic, strong,readonly,getter=titleView) UIScrollView *titleScrollView;
+
+@property (nonatomic,assign) CGRect titleViewFrame;
+
 -(void)updateUI;
 
 @end
