@@ -1,0 +1,18 @@
+//
+//  yk.pch
+//  YingKeZSW
+//
+//  Created by iSongWei on 2017/6/28.
+//  Copyright © 2017年 iSong. All rights reserved.
+//
+
+#ifndef yk_pch
+#define yk_pch
+
+
+#import "mmtMacros.h"
+#import "UIColor+Extension.h"
+
+
+
+#endif /* yk_pch */
