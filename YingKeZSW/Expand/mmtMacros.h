@@ -17,18 +17,18 @@
 
 //加密
 //参数key
-#define DESparameterKEY @"E92F11C9-AB57-DF7A-CF4E-ACDC72B39FF4"
+#define DESparameterKEY @""
 //接口key
-#define DESAPIKEY @"X#f/=s(b"
+#define DESAPIKEY @""
 
 
 //极光推送
 
-#define JPUSHAppKey @"f430e91193e5de72d9b415e7"
+#define JPUSHAppKey @""
 
 //友盟统计
 //友盟分享
-#define UmengAppkey @"58525749a40fa34405000fba"
+#define UmengAppkey @""
 
 //用户存储信息
 #define AppUser [AppDefaultUtil sharedInstance]
@@ -36,7 +36,8 @@
 
 
 
-
+//接口服务器地址
+#define NetClient [NetWorkClient sharedClient]
 
 
 
@@ -63,11 +64,6 @@
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
-
-#define MMTColor RGBColor(@"1677cb")
-#define MMTColor2 RGBColor(@"FFA210")
-#define CommonColor RGBColor(@"777777")
-#define themeColor RGBColor(@"777777")
 
 
 

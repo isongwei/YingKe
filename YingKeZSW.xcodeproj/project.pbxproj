@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C26574105DEC9E2E1CD9526 /* libPods-YingKeZSW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC9F079FED2B0DA526A6AD7 /* libPods-YingKeZSW.a */; };
+		F9111B3B1F0B443500211B3F /* SW_HotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9111B391F0B443500211B3F /* SW_HotViewCell.m */; };
+		F9111B3C1F0B443500211B3F /* SW_HotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9111B3A1F0B443500211B3F /* SW_HotViewCell.xib */; };
+		F932191A1F05FC56002D4716 /* NetWorkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F93219191F05FC56002D4716 /* NetWorkClient.m */; };
+		F944E2EC1F04962C007AD6C1 /* SW_HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F944E2EA1F04962C007AD6C1 /* SW_HotViewController.m */; };
+		F944E2ED1F04962C007AD6C1 /* SW_HotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F944E2EB1F04962C007AD6C1 /* SW_HotViewController.xib */; };
 		F990D0301F0349E200413C67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D02F1F0349E200413C67 /* main.m */; };
 		F990D0331F0349E200413C67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D0321F0349E200413C67 /* AppDelegate.m */; };
 		F990D03B1F0349E200413C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F990D03A1F0349E200413C67 /* Assets.xcassets */; };
@@ -46,9 +52,6 @@
 		F990D12C1F035F0300413C67 /* SW_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D12A1F035F0300413C67 /* SW_MineViewController.m */; };
 		F990D12D1F035F0300413C67 /* SW_MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F990D12B1F035F0300413C67 /* SW_MineViewController.xib */; };
 		F990D1341F037DEF00413C67 /* SW_FaxianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D1321F037DEF00413C67 /* SW_FaxianViewController.m */; };
-		F990D1351F037DEF00413C67 /* SW_FaxianViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F990D1331F037DEF00413C67 /* SW_FaxianViewController.xib */; };
-		F990D1391F037DF900413C67 /* SW_RemenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D1371F037DF900413C67 /* SW_RemenViewController.m */; };
-		F990D13A1F037DF900413C67 /* SW_RemenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F990D1381F037DF900413C67 /* SW_RemenViewController.xib */; };
 		F990D13E1F037E1200413C67 /* SW_XiaoshipinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D13C1F037E1100413C67 /* SW_XiaoshipinViewController.m */; };
 		F990D13F1F037E1200413C67 /* SW_XiaoshipinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F990D13D1F037E1100413C67 /* SW_XiaoshipinViewController.xib */; };
 		F990D1431F037E1C00413C67 /* SW_YouxiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D1411F037E1C00413C67 /* SW_YouxiViewController.m */; };
@@ -58,6 +61,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAC9F079FED2B0DA526A6AD7 /* libPods-YingKeZSW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YingKeZSW.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA79F79300C7064A0169F57 /* Pods-YingKeZSW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YingKeZSW.release.xcconfig"; path = "Pods/Target Support Files/Pods-YingKeZSW/Pods-YingKeZSW.release.xcconfig"; sourceTree = "<group>"; };
+		F5E78454901E3867856A5F72 /* Pods-YingKeZSW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YingKeZSW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YingKeZSW/Pods-YingKeZSW.debug.xcconfig"; sourceTree = "<group>"; };
+		F9111B381F0B443500211B3F /* SW_HotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_HotViewCell.h; sourceTree = "<group>"; };
+		F9111B391F0B443500211B3F /* SW_HotViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SW_HotViewCell.m; sourceTree = "<group>"; };
+		F9111B3A1F0B443500211B3F /* SW_HotViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SW_HotViewCell.xib; sourceTree = "<group>"; };
+		F93219181F05FC56002D4716 /* NetWorkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkClient.h; sourceTree = "<group>"; };
+		F93219191F05FC56002D4716 /* NetWorkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkClient.m; sourceTree = "<group>"; };
+		F944E2E81F049027007AD6C1 /* YK_URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YK_URL.h; sourceTree = "<group>"; };
+		F944E2E91F04962C007AD6C1 /* SW_HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_HotViewController.h; sourceTree = "<group>"; };
+		F944E2EA1F04962C007AD6C1 /* SW_HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SW_HotViewController.m; sourceTree = "<group>"; };
+		F944E2EB1F04962C007AD6C1 /* SW_HotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SW_HotViewController.xib; sourceTree = "<group>"; };
 		F990D02B1F0349E200413C67 /* YingKeZSW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YingKeZSW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F990D02F1F0349E200413C67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F990D0311F0349E200413C67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,10 +149,6 @@
 		F990D1301F03601800413C67 /* mmtMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmtMacros.h; sourceTree = "<group>"; };
 		F990D1311F037DEF00413C67 /* SW_FaxianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_FaxianViewController.h; sourceTree = "<group>"; };
 		F990D1321F037DEF00413C67 /* SW_FaxianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SW_FaxianViewController.m; sourceTree = "<group>"; };
-		F990D1331F037DEF00413C67 /* SW_FaxianViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SW_FaxianViewController.xib; sourceTree = "<group>"; };
-		F990D1361F037DF900413C67 /* SW_RemenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_RemenViewController.h; sourceTree = "<group>"; };
-		F990D1371F037DF900413C67 /* SW_RemenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SW_RemenViewController.m; sourceTree = "<group>"; };
-		F990D1381F037DF900413C67 /* SW_RemenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SW_RemenViewController.xib; sourceTree = "<group>"; };
 		F990D13B1F037E1100413C67 /* SW_XiaoshipinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_XiaoshipinViewController.h; sourceTree = "<group>"; };
 		F990D13C1F037E1100413C67 /* SW_XiaoshipinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SW_XiaoshipinViewController.m; sourceTree = "<group>"; };
 		F990D13D1F037E1100413C67 /* SW_XiaoshipinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SW_XiaoshipinViewController.xib; sourceTree = "<group>"; };
@@ -155,17 +166,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C26574105DEC9E2E1CD9526 /* libPods-YingKeZSW.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E54235801B3384B32BE9D41C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAC9F079FED2B0DA526A6AD7 /* libPods-YingKeZSW.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED6AEB081325FCB1BD6D7479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5E78454901E3867856A5F72 /* Pods-YingKeZSW.debug.xcconfig */,
+				BEA79F79300C7064A0169F57 /* Pods-YingKeZSW.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F93219171F05FC56002D4716 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				F93219181F05FC56002D4716 /* NetWorkClient.h */,
+				F93219191F05FC56002D4716 /* NetWorkClient.m */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		F932191B1F0602F4002D4716 /* LiveView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LiveView;
+			sourceTree = "<group>";
+		};
 		F990D0221F0349E200413C67 = {
 			isa = PBXGroup;
 			children = (
 				F990D02D1F0349E200413C67 /* YingKeZSW */,
 				F990D02C1F0349E200413C67 /* Products */,
+				ED6AEB081325FCB1BD6D7479 /* Pods */,
+				E54235801B3384B32BE9D41C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -206,6 +253,7 @@
 		F990D0471F0357E800413C67 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F932191B1F0602F4002D4716 /* LiveView */,
 				F990D1101F035C3300413C67 /* Other */,
 				F990D0FC1F035BE500413C67 /* 附近 */,
 				F990D1011F035BE500413C67 /* 关注 */,
@@ -503,6 +551,9 @@
 		F990D1091F035BE500413C67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F9111B381F0B443500211B3F /* SW_HotViewCell.h */,
+				F9111B391F0B443500211B3F /* SW_HotViewCell.m */,
+				F9111B3A1F0B443500211B3F /* SW_HotViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -515,10 +566,9 @@
 				F990D1261F035EF900413C67 /* SW_ShouyeViewController.xib */,
 				F990D1311F037DEF00413C67 /* SW_FaxianViewController.h */,
 				F990D1321F037DEF00413C67 /* SW_FaxianViewController.m */,
-				F990D1331F037DEF00413C67 /* SW_FaxianViewController.xib */,
-				F990D1361F037DF900413C67 /* SW_RemenViewController.h */,
-				F990D1371F037DF900413C67 /* SW_RemenViewController.m */,
-				F990D1381F037DF900413C67 /* SW_RemenViewController.xib */,
+				F944E2E91F04962C007AD6C1 /* SW_HotViewController.h */,
+				F944E2EA1F04962C007AD6C1 /* SW_HotViewController.m */,
+				F944E2EB1F04962C007AD6C1 /* SW_HotViewController.xib */,
 				F990D13B1F037E1100413C67 /* SW_XiaoshipinViewController.h */,
 				F990D13C1F037E1100413C67 /* SW_XiaoshipinViewController.m */,
 				F990D13D1F037E1100413C67 /* SW_XiaoshipinViewController.xib */,
@@ -588,6 +638,7 @@
 			isa = PBXGroup;
 			children = (
 				F990D1301F03601800413C67 /* mmtMacros.h */,
+				F944E2E81F049027007AD6C1 /* YK_URL.h */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -595,6 +646,7 @@
 		F990D12F1F03600600413C67 /* Verder */ = {
 			isa = PBXGroup;
 			children = (
+				F93219171F05FC56002D4716 /* NetworkClient */,
 				F990D1451F037E6E00413C67 /* SWScrollPageVC */,
 			);
 			path = Verder;
@@ -625,9 +677,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F990D0421F0349E200413C67 /* Build configuration list for PBXNativeTarget "YingKeZSW" */;
 			buildPhases = (
+				B5FBFC7C268851E5282C2A24 /* [CP] Check Pods Manifest.lock */,
 				F990D0271F0349E200413C67 /* Sources */,
 				F990D0281F0349E200413C67 /* Frameworks */,
 				F990D0291F0349E200413C67 /* Resources */,
+				57D72B254DC5A32673E3672B /* [CP] Embed Pods Frameworks */,
+				A6FF42AE88810B6D499C5DD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -678,19 +733,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9111B3C1F0B443500211B3F /* SW_HotViewCell.xib in Resources */,
 				F990D03B1F0349E200413C67 /* Assets.xcassets in Resources */,
-				F990D13A1F037DF900413C67 /* SW_RemenViewController.xib in Resources */,
 				F990D1281F035EF900413C67 /* SW_ShouyeViewController.xib in Resources */,
 				F990D1441F037E1C00413C67 /* SW_YouxiViewController.xib in Resources */,
 				F990D1231F035EEB00413C67 /* SW_GuanzhuViewController.xib in Resources */,
 				F990D13F1F037E1200413C67 /* SW_XiaoshipinViewController.xib in Resources */,
+				F944E2ED1F04962C007AD6C1 /* SW_HotViewController.xib in Resources */,
 				F990D11E1F035EDB00413C67 /* SW_FujinViewController.xib in Resources */,
 				F990D12D1F035F0300413C67 /* SW_MineViewController.xib in Resources */,
-				F990D1351F037DEF00413C67 /* SW_FaxianViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57D72B254DC5A32673E3672B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YingKeZSW/Pods-YingKeZSW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6FF42AE88810B6D499C5DD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YingKeZSW/Pods-YingKeZSW-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FBFC7C268851E5282C2A24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F990D0271F0349E200413C67 /* Sources */ = {
@@ -708,6 +811,7 @@
 				F990D0EA1F035B9500413C67 /* NSString+UserInfo.m in Sources */,
 				F990D0301F0349E200413C67 /* main.m in Sources */,
 				F990D0E51F035B9500413C67 /* NSDate+convenience.m in Sources */,
+				F932191A1F05FC56002D4716 /* NetWorkClient.m in Sources */,
 				F990D0E71F035B9500413C67 /* NSObject+Common.m in Sources */,
 				F990D0EC1F035B9500413C67 /* UIBarButtonItem+Extension.m in Sources */,
 				F990D0F51F035B9500413C67 /* UILabel+Extension.m in Sources */,
@@ -732,10 +836,11 @@
 				F990D0ED1F035B9500413C67 /* UIButton+block.m in Sources */,
 				F990D1481F037E6E00413C67 /* SWScrollPageVC.m in Sources */,
 				F990D0F61F035B9500413C67 /* UITextField+Extension.m in Sources */,
-				F990D1391F037DF900413C67 /* SW_RemenViewController.m in Sources */,
+				F944E2EC1F04962C007AD6C1 /* SW_HotViewController.m in Sources */,
 				F990D1191F035C8400413C67 /* SW_BaseTabBarCtrl.m in Sources */,
 				F990D11D1F035EDB00413C67 /* SW_FujinViewController.m in Sources */,
 				F990D12C1F035F0300413C67 /* SW_MineViewController.m in Sources */,
+				F9111B3B1F0B443500211B3F /* SW_HotViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,6 +939,7 @@
 		};
 		F990D0431F0349E200413C67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E78454901E3867856A5F72 /* Pods-YingKeZSW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -849,6 +955,7 @@
 		};
 		F990D0441F0349E200413C67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA79F79300C7064A0169F57 /* Pods-YingKeZSW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -881,6 +988,7 @@
 				F990D0441F0349E200413C67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

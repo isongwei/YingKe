@@ -6,8 +6,8 @@
 //  Copyright © 2017年 iSong. All rights reserved.
 //
 
-#import "SW_BaseViewCtrl.h"
+#import <UIKit/UIKit.h>
 
-@interface SW_FaxianViewController : SW_BaseViewCtrl
+@interface SW_FaxianViewController : UITableViewController
 
 @end

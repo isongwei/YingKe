@@ -14,18 +14,67 @@
 - (void)animationWithNavigationController:(UINavigationController *)nav TabBarController:(UITabBarController *)tab{
     
     
+
+    
     //scrollView已经有拖拽手势，直接拿到scrollView的拖拽手势
     UIPanGestureRecognizer *pan = self.panGestureRecognizer;
     //获取到拖拽的速度 >0 向下拖动 <0 向上拖动
     CGFloat velocity = [pan velocityInView:self].y;
     if (velocity < -5) {
         //向上拖动，隐藏导航栏
-        [nav setNavigationBarHidden:YES animated:YES];
-        [self setTabBar:tab Hidden:YES];
+        
+        if (nav) {
+            
+            
+            [nav setNavigationBarHidden:YES animated:YES];
+            
+//            CGRect frame = CGRectMake(0, -64, SCREEN_WIDTH, 64);
+//            [UIView animateWithDuration:0.25f animations:^{
+//                nav.navigationBar.frame = frame;
+//            }completion:^(BOOL finished) {
+//                
+//            }];
+//            
+            
+        }
+        if (tab) {
+            
+            [self setTabBar:tab Hidden:YES];
+
+            
+            
+        }
+        
+        
+        
+        
     }else if (velocity > 5) {
         //向下拖动，显示导航栏
-        [nav setNavigationBarHidden:NO animated:YES];
-        [self setTabBar:tab Hidden:NO];
+
+        
+        if (nav) {
+            [nav setNavigationBarHidden:NO animated:YES];
+            
+//            CGRect frame = CGRectMake(0, 0, SCREEN_WIDTH, 64);
+//            [UIView animateWithDuration:0.25f animations:^{
+//                nav.navigationBar.frame = frame;
+//            }completion:^(BOOL finished) {
+//                
+//            }];
+         
+        }
+        if (tab) {
+            [self setTabBar:tab Hidden:NO];
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+        
     }else if(velocity == 0){
         //停止拖拽
     }

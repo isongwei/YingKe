@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSDictionary * strDic = @{@"Faxian":@"发现",@"Remen":@"热门",@"Xiaoshipin":@"小视频",@"Youxi":@"游戏",};
+    NSDictionary * strDic = @{@"Faxian":@"发现",@"Hot":@"热门",@"Xiaoshipin":@"小视频",@"Youxi":@"游戏",};
     
     for (NSString  * str in [strDic allKeys]) {
         Class class = NSClassFromString([NSString stringWithFormat:@"SW_%@ViewController",str]);
