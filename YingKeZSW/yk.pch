@@ -16,7 +16,7 @@
 #import "SDCycleScrollView.h"
 #import "UIView+Frame.h"
 #import "UIImageView+WebCache.h"
-
+#import "MBManager.h"
 
 
 

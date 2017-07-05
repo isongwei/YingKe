@@ -13,6 +13,9 @@
 		F932191A1F05FC56002D4716 /* NetWorkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F93219191F05FC56002D4716 /* NetWorkClient.m */; };
 		F944E2EC1F04962C007AD6C1 /* SW_HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F944E2EA1F04962C007AD6C1 /* SW_HotViewController.m */; };
 		F944E2ED1F04962C007AD6C1 /* SW_HotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F944E2EB1F04962C007AD6C1 /* SW_HotViewController.xib */; };
+		F9775C521F0CB3BA00EC9BC2 /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9775C4E1F0CB3BA00EC9BC2 /* MBManager.m */; };
+		F9775C531F0CB3BA00EC9BC2 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F9775C4F1F0CB3BA00EC9BC2 /* MBProgressHUD.bundle */; };
+		F9775C541F0CB3BA00EC9BC2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9775C511F0CB3BA00EC9BC2 /* MBProgressHUD.m */; };
 		F990D0301F0349E200413C67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D02F1F0349E200413C67 /* main.m */; };
 		F990D0331F0349E200413C67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D0321F0349E200413C67 /* AppDelegate.m */; };
 		F990D03B1F0349E200413C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F990D03A1F0349E200413C67 /* Assets.xcassets */; };
@@ -73,6 +76,11 @@
 		F944E2E91F04962C007AD6C1 /* SW_HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_HotViewController.h; sourceTree = "<group>"; };
 		F944E2EA1F04962C007AD6C1 /* SW_HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SW_HotViewController.m; sourceTree = "<group>"; };
 		F944E2EB1F04962C007AD6C1 /* SW_HotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SW_HotViewController.xib; sourceTree = "<group>"; };
+		F9775C4D1F0CB3BA00EC9BC2 /* MBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBManager.h; sourceTree = "<group>"; };
+		F9775C4E1F0CB3BA00EC9BC2 /* MBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBManager.m; sourceTree = "<group>"; };
+		F9775C4F1F0CB3BA00EC9BC2 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F9775C501F0CB3BA00EC9BC2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F9775C511F0CB3BA00EC9BC2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F990D02B1F0349E200413C67 /* YingKeZSW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YingKeZSW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F990D02F1F0349E200413C67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F990D0311F0349E200413C67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -204,6 +212,26 @@
 			children = (
 			);
 			path = LiveView;
+			sourceTree = "<group>";
+		};
+		F9775C4B1F0CB3BA00EC9BC2 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F9775C4C1F0CB3BA00EC9BC2 /* MBManager */,
+				F9775C4F1F0CB3BA00EC9BC2 /* MBProgressHUD.bundle */,
+				F9775C501F0CB3BA00EC9BC2 /* MBProgressHUD.h */,
+				F9775C511F0CB3BA00EC9BC2 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F9775C4C1F0CB3BA00EC9BC2 /* MBManager */ = {
+			isa = PBXGroup;
+			children = (
+				F9775C4D1F0CB3BA00EC9BC2 /* MBManager.h */,
+				F9775C4E1F0CB3BA00EC9BC2 /* MBManager.m */,
+			);
+			path = MBManager;
 			sourceTree = "<group>";
 		};
 		F990D0221F0349E200413C67 = {
@@ -646,6 +674,7 @@
 		F990D12F1F03600600413C67 /* Verder */ = {
 			isa = PBXGroup;
 			children = (
+				F9775C4B1F0CB3BA00EC9BC2 /* MBProgressHUD */,
 				F93219171F05FC56002D4716 /* NetworkClient */,
 				F990D1451F037E6E00413C67 /* SWScrollPageVC */,
 			);
@@ -740,6 +769,7 @@
 				F990D1231F035EEB00413C67 /* SW_GuanzhuViewController.xib in Resources */,
 				F990D13F1F037E1200413C67 /* SW_XiaoshipinViewController.xib in Resources */,
 				F944E2ED1F04962C007AD6C1 /* SW_HotViewController.xib in Resources */,
+				F9775C531F0CB3BA00EC9BC2 /* MBProgressHUD.bundle in Resources */,
 				F990D11E1F035EDB00413C67 /* SW_FujinViewController.xib in Resources */,
 				F990D12D1F035F0300413C67 /* SW_MineViewController.xib in Resources */,
 			);
@@ -814,6 +844,7 @@
 				F932191A1F05FC56002D4716 /* NetWorkClient.m in Sources */,
 				F990D0E71F035B9500413C67 /* NSObject+Common.m in Sources */,
 				F990D0EC1F035B9500413C67 /* UIBarButtonItem+Extension.m in Sources */,
+				F9775C521F0CB3BA00EC9BC2 /* MBManager.m in Sources */,
 				F990D0F51F035B9500413C67 /* UILabel+Extension.m in Sources */,
 				F990D0F01F035B9500413C67 /* UIColor+Extension.m in Sources */,
 				F990D14C1F039D9B00413C67 /* UIScrollView+Extension.m in Sources */,
@@ -829,6 +860,7 @@
 				F990D0E91F035B9500413C67 /* NSString+Extension.m in Sources */,
 				F990D1221F035EEB00413C67 /* SW_GuanzhuViewController.m in Sources */,
 				F990D0EF1F035B9500413C67 /* UIButton+timer.m in Sources */,
+				F9775C541F0CB3BA00EC9BC2 /* MBProgressHUD.m in Sources */,
 				F990D0F31F035B9500413C67 /* UIImage+Extension.m in Sources */,
 				F990D1271F035EF900413C67 /* SW_ShouyeViewController.m in Sources */,
 				F990D0F81F035B9500413C67 /* UIView+Extension.m in Sources */,

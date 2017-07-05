@@ -31,7 +31,7 @@
 
     [self requestData];
     
-    [self requestData1];
+    
 
 }
 
@@ -45,7 +45,8 @@
 }
 -(void)initView{
     
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"SW_HotViewCell"];
+    
+    [_tableView registerNib:[UINib nibWithNibName:@"SW_HotViewCell" bundle:nil] forCellReuseIdentifier:@"SW_HotViewCell"];
     
     // 网络加载图片的轮播器
     _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:(CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH*0.35)) delegate:self placeholderImage:nil];
@@ -67,7 +68,7 @@
 
 #pragma mark - ===============requestData===============
 -(void)requestData{
-    
+    [MBManager showLoading];
     [NetClient  GET:YK_URL_HOT1 parameter:nil success:^(MainModel *dataModel) {
         
         //banner
@@ -78,6 +79,8 @@
         }
         _cycleScrollView.imageURLStringsGroup = imageArray;
         
+        
+        [self requestData1];
         
     } failure:^(NSError *error) {
         
@@ -93,7 +96,11 @@
         for (NSDictionary  *dic  in dataModel.lives) {
             [_dataArray addObject:dic];
         }
+        NSLog(@"%@", [NSThread currentThread]);
+        
         [_tableView reloadData];
+        
+        [MBManager hideAlert];
     } failure:^(NSError *error) {
         
     }];
@@ -108,8 +115,13 @@
     if (_dataArray.count) {
         NSDictionary * dic =  _dataArray[indexPath.row];
         static NSString * acell = @"SW_HotViewCell";
-        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:acell];
-        [cell.imageView  sd_setImageWithURL:[NSURL URLWithString:dic[@"creator"][@"portrait"]]];
+        SW_HotViewCell * cell = [tableView dequeueReusableCellWithIdentifier:acell];
+        [cell.headImage sd_setImageWithURL:[NSURL URLWithString:dic[@"creator"][@"portrait"]] placeholderImage:nil];
+        
+//        [cell.imageView  sd_setImageWithURL:[NSURL URLWithString:dic[@"creator"][@"portrait"]]];
+//        [cell.imageView  sd_setImageWithURL:[NSURL URLWithString:dic[@"creator"][@"portrait"]]];
+        
+        
         return cell;
     }else{
         return nil;

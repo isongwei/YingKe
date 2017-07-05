@@ -10,4 +10,6 @@
 
 @interface SW_HotViewCell : UITableViewCell
 
+@property (nonatomic,weak) IBOutlet UIImageView * headImage;
+
 @end
