@@ -8,6 +8,7 @@
 
 #import "SW_BaseTabBarCtrl.h"
 #import "SW_BaseNavCtrl.h"
+#import "RTRootNavigationController.h"
 
 @interface SW_BaseTabBarCtrl ()
 @property (nonatomic,strong)NSMutableArray *array;

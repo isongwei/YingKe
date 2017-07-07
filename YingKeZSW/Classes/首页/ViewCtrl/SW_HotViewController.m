@@ -9,6 +9,8 @@
 
 #import "SW_HotViewController.h"
 #import "SW_HotViewCell.h"
+#import "SW_LiveViewCtrl.h"//直播ViewCtrl
+
 
 
 @interface SW_HotViewController ()<SDCycleScrollViewDelegate>
@@ -33,6 +35,11 @@
     
     
 
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 
@@ -90,7 +97,7 @@
 
 -(void)requestData1{
     
-    [NetClient  GET:YK_URL_HOT2 parameter:nil success:^(MainModel *dataModel) {
+    [NetClient  GET:YK_URL_HOT3 parameter:nil success:^(MainModel *dataModel) {
         
         //lives
         for (NSDictionary  *dic  in dataModel.lives) {
@@ -117,11 +124,7 @@
         static NSString * acell = @"SW_HotViewCell";
         SW_HotViewCell * cell = [tableView dequeueReusableCellWithIdentifier:acell];
         [cell.headImage sd_setImageWithURL:[NSURL URLWithString:dic[@"creator"][@"portrait"]] placeholderImage:nil];
-        
-//        [cell.imageView  sd_setImageWithURL:[NSURL URLWithString:dic[@"creator"][@"portrait"]]];
-//        [cell.imageView  sd_setImageWithURL:[NSURL URLWithString:dic[@"creator"][@"portrait"]]];
-        
-        
+
         return cell;
     }else{
         return nil;
@@ -162,7 +165,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self.navigationController pushViewController:[[SW_BaseViewCtrl alloc]init] animated:YES];
+    SW_LiveViewCtrl * vc= [[SW_LiveViewCtrl alloc]init];
+    vc.infoDic = _dataArray[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

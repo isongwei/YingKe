@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C26574105DEC9E2E1CD9526 /* libPods-YingKeZSW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC9F079FED2B0DA526A6AD7 /* libPods-YingKeZSW.a */; };
 		F9111B3B1F0B443500211B3F /* SW_HotViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9111B391F0B443500211B3F /* SW_HotViewCell.m */; };
 		F9111B3C1F0B443500211B3F /* SW_HotViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9111B3A1F0B443500211B3F /* SW_HotViewCell.xib */; };
 		F932191A1F05FC56002D4716 /* NetWorkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F93219191F05FC56002D4716 /* NetWorkClient.m */; };
@@ -16,6 +15,19 @@
 		F9775C521F0CB3BA00EC9BC2 /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9775C4E1F0CB3BA00EC9BC2 /* MBManager.m */; };
 		F9775C531F0CB3BA00EC9BC2 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F9775C4F1F0CB3BA00EC9BC2 /* MBProgressHUD.bundle */; };
 		F9775C541F0CB3BA00EC9BC2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9775C511F0CB3BA00EC9BC2 /* MBProgressHUD.m */; };
+		F9775C5B1F0CC38C00EC9BC2 /* SW_LiveViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F9775C591F0CC38C00EC9BC2 /* SW_LiveViewCtrl.m */; };
+		F9775C5E1F0CC7CC00EC9BC2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C5D1F0CC7CC00EC9BC2 /* AudioToolbox.framework */; };
+		F9775C601F0CC7D200EC9BC2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C5F1F0CC7D200EC9BC2 /* AVFoundation.framework */; };
+		F9775C621F0CC7DA00EC9BC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C611F0CC7DA00EC9BC2 /* CoreGraphics.framework */; };
+		F9775C641F0CC7E100EC9BC2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C631F0CC7E100EC9BC2 /* CoreMedia.framework */; };
+		F9775C661F0CC7E900EC9BC2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C651F0CC7E900EC9BC2 /* CoreVideo.framework */; };
+		F9775C681F0CC7EF00EC9BC2 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C671F0CC7EF00EC9BC2 /* libbz2.tbd */; };
+		F9775C6A1F0CC7F700EC9BC2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C691F0CC7F700EC9BC2 /* libz.tbd */; };
+		F9775C6C1F0CC7FE00EC9BC2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C6B1F0CC7FE00EC9BC2 /* MediaPlayer.framework */; };
+		F9775C6E1F0CC80500EC9BC2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C6D1F0CC80500EC9BC2 /* MobileCoreServices.framework */; };
+		F9775C701F0CC80C00EC9BC2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C6F1F0CC80C00EC9BC2 /* OpenGLES.framework */; };
+		F9775C721F0CC81300EC9BC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C711F0CC81300EC9BC2 /* QuartzCore.framework */; };
+		F9775C741F0CC81B00EC9BC2 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9775C731F0CC81B00EC9BC2 /* VideoToolbox.framework */; };
 		F990D0301F0349E200413C67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D02F1F0349E200413C67 /* main.m */; };
 		F990D0331F0349E200413C67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D0321F0349E200413C67 /* AppDelegate.m */; };
 		F990D03B1F0349E200413C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F990D03A1F0349E200413C67 /* Assets.xcassets */; };
@@ -61,10 +73,12 @@
 		F990D1441F037E1C00413C67 /* SW_YouxiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F990D1421F037E1C00413C67 /* SW_YouxiViewController.xib */; };
 		F990D1481F037E6E00413C67 /* SWScrollPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D1471F037E6E00413C67 /* SWScrollPageVC.m */; };
 		F990D14C1F039D9B00413C67 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F990D14B1F039D9B00413C67 /* UIScrollView+Extension.m */; };
+		F9DE3A5B1F0F2BB800A2251D /* RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE3A571F0F2BB800A2251D /* RTRootNavigationController.m */; };
+		F9DE3A5C1F0F2BB800A2251D /* UIViewController+RTRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE3A591F0F2BB800A2251D /* UIViewController+RTRootNavigationController.m */; };
+		F9DE3A851F0F611900A2251D /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DE3A841F0F611900A2251D /* IJKMediaFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AAC9F079FED2B0DA526A6AD7 /* libPods-YingKeZSW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YingKeZSW.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA79F79300C7064A0169F57 /* Pods-YingKeZSW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YingKeZSW.release.xcconfig"; path = "Pods/Target Support Files/Pods-YingKeZSW/Pods-YingKeZSW.release.xcconfig"; sourceTree = "<group>"; };
 		F5E78454901E3867856A5F72 /* Pods-YingKeZSW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YingKeZSW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YingKeZSW/Pods-YingKeZSW.debug.xcconfig"; sourceTree = "<group>"; };
 		F9111B381F0B443500211B3F /* SW_HotViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_HotViewCell.h; sourceTree = "<group>"; };
@@ -81,6 +95,20 @@
 		F9775C4F1F0CB3BA00EC9BC2 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		F9775C501F0CB3BA00EC9BC2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F9775C511F0CB3BA00EC9BC2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F9775C581F0CC38C00EC9BC2 /* SW_LiveViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SW_LiveViewCtrl.h; sourceTree = "<group>"; };
+		F9775C591F0CC38C00EC9BC2 /* SW_LiveViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SW_LiveViewCtrl.m; sourceTree = "<group>"; };
+		F9775C5D1F0CC7CC00EC9BC2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F9775C5F1F0CC7D200EC9BC2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F9775C611F0CC7DA00EC9BC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9775C631F0CC7E100EC9BC2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F9775C651F0CC7E900EC9BC2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F9775C671F0CC7EF00EC9BC2 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		F9775C691F0CC7F700EC9BC2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F9775C6B1F0CC7FE00EC9BC2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F9775C6D1F0CC80500EC9BC2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F9775C6F1F0CC80C00EC9BC2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F9775C711F0CC81300EC9BC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F9775C731F0CC81B00EC9BC2 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		F990D02B1F0349E200413C67 /* YingKeZSW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YingKeZSW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F990D02F1F0349E200413C67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F990D0311F0349E200413C67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +195,11 @@
 		F990D1471F037E6E00413C67 /* SWScrollPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWScrollPageVC.m; sourceTree = "<group>"; };
 		F990D14A1F039D9B00413C67 /* UIScrollView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extension.h"; sourceTree = "<group>"; };
 		F990D14B1F039D9B00413C67 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
+		F9DE3A561F0F2BB800A2251D /* RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRootNavigationController.h; sourceTree = "<group>"; };
+		F9DE3A571F0F2BB800A2251D /* RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRootNavigationController.m; sourceTree = "<group>"; };
+		F9DE3A581F0F2BB800A2251D /* UIViewController+RTRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RTRootNavigationController.h"; sourceTree = "<group>"; };
+		F9DE3A591F0F2BB800A2251D /* UIViewController+RTRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RTRootNavigationController.m"; sourceTree = "<group>"; };
+		F9DE3A841F0F611900A2251D /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +207,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C26574105DEC9E2E1CD9526 /* libPods-YingKeZSW.a in Frameworks */,
+				F9DE3A851F0F611900A2251D /* IJKMediaFramework.framework in Frameworks */,
+				F9775C741F0CC81B00EC9BC2 /* VideoToolbox.framework in Frameworks */,
+				F9775C721F0CC81300EC9BC2 /* QuartzCore.framework in Frameworks */,
+				F9775C701F0CC80C00EC9BC2 /* OpenGLES.framework in Frameworks */,
+				F9775C6E1F0CC80500EC9BC2 /* MobileCoreServices.framework in Frameworks */,
+				F9775C6C1F0CC7FE00EC9BC2 /* MediaPlayer.framework in Frameworks */,
+				F9775C6A1F0CC7F700EC9BC2 /* libz.tbd in Frameworks */,
+				F9775C681F0CC7EF00EC9BC2 /* libbz2.tbd in Frameworks */,
+				F9775C661F0CC7E900EC9BC2 /* CoreVideo.framework in Frameworks */,
+				F9775C641F0CC7E100EC9BC2 /* CoreMedia.framework in Frameworks */,
+				F9775C621F0CC7DA00EC9BC2 /* CoreGraphics.framework in Frameworks */,
+				F9775C601F0CC7D200EC9BC2 /* AVFoundation.framework in Frameworks */,
+				F9775C5E1F0CC7CC00EC9BC2 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +229,19 @@
 		E54235801B3384B32BE9D41C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AAC9F079FED2B0DA526A6AD7 /* libPods-YingKeZSW.a */,
+				F9DE3A841F0F611900A2251D /* IJKMediaFramework.framework */,
+				F9775C731F0CC81B00EC9BC2 /* VideoToolbox.framework */,
+				F9775C711F0CC81300EC9BC2 /* QuartzCore.framework */,
+				F9775C6F1F0CC80C00EC9BC2 /* OpenGLES.framework */,
+				F9775C6D1F0CC80500EC9BC2 /* MobileCoreServices.framework */,
+				F9775C6B1F0CC7FE00EC9BC2 /* MediaPlayer.framework */,
+				F9775C691F0CC7F700EC9BC2 /* libz.tbd */,
+				F9775C671F0CC7EF00EC9BC2 /* libbz2.tbd */,
+				F9775C651F0CC7E900EC9BC2 /* CoreVideo.framework */,
+				F9775C631F0CC7E100EC9BC2 /* CoreMedia.framework */,
+				F9775C611F0CC7DA00EC9BC2 /* CoreGraphics.framework */,
+				F9775C5F1F0CC7D200EC9BC2 /* AVFoundation.framework */,
+				F9775C5D1F0CC7CC00EC9BC2 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +267,8 @@
 		F932191B1F0602F4002D4716 /* LiveView */ = {
 			isa = PBXGroup;
 			children = (
+				F9775C581F0CC38C00EC9BC2 /* SW_LiveViewCtrl.h */,
+				F9775C591F0CC38C00EC9BC2 /* SW_LiveViewCtrl.m */,
 			);
 			path = LiveView;
 			sourceTree = "<group>";
@@ -674,6 +733,7 @@
 		F990D12F1F03600600413C67 /* Verder */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE3A541F0F2BB800A2251D /* Classes */,
 				F9775C4B1F0CB3BA00EC9BC2 /* MBProgressHUD */,
 				F93219171F05FC56002D4716 /* NetworkClient */,
 				F990D1451F037E6E00413C67 /* SWScrollPageVC */,
@@ -697,6 +757,17 @@
 				F990D14B1F039D9B00413C67 /* UIScrollView+Extension.m */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		F9DE3A541F0F2BB800A2251D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE3A561F0F2BB800A2251D /* RTRootNavigationController.h */,
+				F9DE3A571F0F2BB800A2251D /* RTRootNavigationController.m */,
+				F9DE3A581F0F2BB800A2251D /* UIViewController+RTRootNavigationController.h */,
+				F9DE3A591F0F2BB800A2251D /* UIViewController+RTRootNavigationController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -835,6 +906,7 @@
 				F990D0F91F035B9500413C67 /* UIView+Frame.m in Sources */,
 				F990D0331F0349E200413C67 /* AppDelegate.m in Sources */,
 				F990D0FB1F035B9500413C67 /* UIWindow+SW.m in Sources */,
+				F9775C5B1F0CC38C00EC9BC2 /* SW_LiveViewCtrl.m in Sources */,
 				F990D0E61F035B9500413C67 /* NSDate+Helper.m in Sources */,
 				F990D1161F035C6300413C67 /* SW_BaseNavCtrl.m in Sources */,
 				F990D0F41F035B9500413C67 /* UILabel+Attribute.m in Sources */,
@@ -843,6 +915,7 @@
 				F990D0E51F035B9500413C67 /* NSDate+convenience.m in Sources */,
 				F932191A1F05FC56002D4716 /* NetWorkClient.m in Sources */,
 				F990D0E71F035B9500413C67 /* NSObject+Common.m in Sources */,
+				F9DE3A5C1F0F2BB800A2251D /* UIViewController+RTRootNavigationController.m in Sources */,
 				F990D0EC1F035B9500413C67 /* UIBarButtonItem+Extension.m in Sources */,
 				F9775C521F0CB3BA00EC9BC2 /* MBManager.m in Sources */,
 				F990D0F51F035B9500413C67 /* UILabel+Extension.m in Sources */,
@@ -873,6 +946,7 @@
 				F990D11D1F035EDB00413C67 /* SW_FujinViewController.m in Sources */,
 				F990D12C1F035F0300413C67 /* SW_MineViewController.m in Sources */,
 				F9111B3B1F0B443500211B3F /* SW_HotViewCell.m in Sources */,
+				F9DE3A5B1F0F2BB800A2251D /* RTRootNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,7 +994,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -962,7 +1036,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -973,10 +1047,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5E78454901E3867856A5F72 /* Pods-YingKeZSW.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MHN2XFC72U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/IJKMediaFramework",
+					"$(PROJECT_DIR)/YingKeZSW/Verder",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YingKeZSW/yk.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = YingKeZSW/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -989,10 +1079,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEA79F79300C7064A0169F57 /* Pods-YingKeZSW.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MHN2XFC72U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/IJKMediaFramework",
+					"$(PROJECT_DIR)/YingKeZSW/Verder",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YingKeZSW/yk.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = YingKeZSW/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
